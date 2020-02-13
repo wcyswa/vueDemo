@@ -1,31 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-<!--    <Login/>-->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <transition name="router-fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-// import Login from './views/Member/login.vue';
-
-export default {
-  name: 'app',
-  components: {
-     HelloWorld
-    // Login
-  }
-}
+  // export default {
+  //   created() {
+  //     // page load and read vuex state grom sessionStorage
+  //     sessionStorage.getItem("vuex") && this.$store.replaceState(Object.assign(this.$store.state, JSON.parse(sessionStorage.getItem("vuex"))));
+  //     // page refresh save vuex statw to sessionStorage
+  //     window.addEventListener("beforeunload", () => {
+  //       sessionStorage.setItem("vuex", JSON.stringify(this.$store.state));
+  //     });
+  //   }
+  // };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style >
+/*
+  !*@import "../public/less/base.less";*!
+*/
+  #app {
+    height: 100%;
+  }
+  /*.router-fade-enter-active,*/
+  /*.router-fade-leave-active {*/
+  /*  transition: opacity 0.1s;*/
+  /*}*/
+  /*.router-fade-enter,*/
+  /*.router-fade-leave-active {*/
+  /*  opacity: 0;*/
+  /*}*/
 </style>
