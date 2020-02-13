@@ -14,7 +14,7 @@
             <van-cell class="member_item" :title="$t('m.member.address')" is-link @click="onAddress" />
             <van-cell class="member_item" :title="$t('m.member.set')" is-link to="set" />
         </div>-->
-        测试是我的第一个路由
+        测试是我的第一个路由 再次修改1
     </div>
 </template>
 
