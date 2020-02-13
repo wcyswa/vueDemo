@@ -14,7 +14,9 @@
             <van-cell class="member_item" :title="$t('m.member.address')" is-link @click="onAddress" />
             <van-cell class="member_item" :title="$t('m.member.set')" is-link to="set" />
         </div>-->
-       我是第一次修改 变了 1 2
+
+       我是第一次修改 变了 1 2 3
+
 
     </div>
 </template>
